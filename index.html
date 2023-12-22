@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    
+    <div id="discriptions-box">
+        <h2>Ingredients:</h2>
+        <div>
+            <ol id="list_ing">
+            </ol>
+        </div>
+        <h2>Steps</h2>
+        <p id="steps"></p>
+        <button class="button-style close-button">Close</button>
+    </div>
+
+
+    <!-- this is the nav bar  -->
+    <nav>
+        <div id="contact">
+            <a href="#all-contens"><p class="nav-text">Home</p></a>
+            <a href="#footer"><p class="nav-text">Contact us</p></a>
+        </div>
+
+        <!-- logo -->
+
+        <div id="q-div">
+            <img id="logo"  src="./assets/logo.png" alt="logo" onclick="window.location.reload()">
+        </div>
+
+        <!-- contact links and information div -->
+
+        <div id="contact-links">
+            <a href="https://www.linkedin.com/in/jesudas-zion-t-894777289/"><img id="linkedin-logo" class="logos" src="./assets/linkedin-icon.png" alt="linkedin-logo"></a>
+            <a href="https://github.com/Zion203"><img id="github-logo" class="logos" src="./assets/github-logo.png" alt="github-logo"></a>
+        </div>
+    </nav>
+
+    <!-- The main content of the page -->
+
+    <div id="all-contens">
+
+        <!-- the header -->
+        <section id="header-sec">
+            <div id="discription">
+                <p id="dis-text">Welcome to Organic—your culinary inspiration! 
+                    Let us surprise you with delightful, easy-to-follow recipes.
+                    Elevate your cooking effortlessly!
+                </p>
+            </div>
+
+            <div id="input-div">
+                <input type="search" placeholder="Enter the Category...." id="input">
+                <div id="search-div">
+                    <img id="search-icon" src="./assets/search-icon.png" alt="search icon">
+                    <div id="Categories"><p>Categories</p></div>
+                </div>
+                
+            </div>
+
+        </section>
+
+        <!-- the random dish section -->
+        <section id="random-content">
+            <h1 id="rand-head" class="bigger">Your Random Dish</h1>
+            <img id="dish-random" src="" alt="random-dish">
+            <h1 id="dish-name" class="bigger">soooru</h1>
+        </section>
+
+        
+    </div>
+    <!-- The searched result tempory section -->
+    <div id="search-content">
+        <section id="temp-dishes">
+            <h1 id="temp-heading">Your Category</h1>
+    
+            <div id="searched-dishes">
+            </div>
+        </section>
+    </div>
+    <footer id="footer">
+        <section>
+            <img src="./assets/dp.webp" alt="">
+            <div>
+                <p> Vijay</p>
+                <p>CEO of Organic</p>
+                <p></p>
+            </div>
+            <div>
+                <p>Address</p>
+                <p>123, Anna Nagar <br>
+                    Chennai, Tamil Nadu <br>
+                    600001, India</p>
+            </div>
+
+        </section>
+        <hr>
+        <section>
+            <div>
+                <p>Contacts</p>
+                <p>SpiderMan@Avengers.com</p>
+                <p>New york</p>
+            </div>
+            <div>
+                <p>Spider Man</p>
+                <p>Devleoper</p>
+                <p>Designer</p>
+            </div>
+            <img src="./assets/spiderman-doing-work-2d-1360x768.jpg" alt="">
+        </section>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

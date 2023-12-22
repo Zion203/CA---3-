@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    position:sticky;
+    top: 0;
+    background-color: white;
+}
+
+.logos{
+    height: 30px;
+    width: 30px;
+    margin-left:15px ;
+}
+
+#logo{
+    height: 60px;
+    width: 70px;
+}
+
+#contact{
+    display: flex;
+    margin-left: 15px;
+}
+
+.nav-text{
+    color: rgb(0, 51, 0);
+    margin-left:15px ;
+    font-weight: bold;
+}
+
+#all-contens{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('./assets/dark-wood-ca.avif');
+    background-size: cover;
+}
+
+#header-sec{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    width: 60%;
+}
+
+#discription{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size:100%;
+    line-height:25px;
+    background-color: rgb(81, 177, 64);
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#search-div{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(81, 177, 64) ;
+    border-radius: 0 5px 5px 0;
+    position: relative;
+    right: 3px;
+}
+
+#input-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+#input{
+    border: unset;
+    border-bottom:3px solid rgb(81, 177, 64) ;
+    color: gray;
+    border-radius: 5px;
+    width: 70%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding-left: 10px;
+    height:30px ;
+    
+}
+
+#search-icon{
+    height: 20px;
+    width: 20px;
+    filter: invert(100%);
+}
+
+#random-content{
+
+    height: 70vh;
+    margin-top: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#dish-random{
+    height:40vh;
+    width: 35vw;
+    border: 3px solid white;
+}
+
+#search-content{
+    display:none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.searched-dish{
+    height:250px;
+    width:250px;
+    margin-bottom: 20px;
+    background-color: rgb(81, 177, 64);
+    color: white; 
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#searched-dishes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+#temp-heading{
+    margin-bottom: 20px;
+}
+
+#discriptions-box{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:black;
+    opacity: 90%;
+    width: 40%;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left:30%;
+    margin-top: 10%;
+    visibility: hidden;
+    color: white;
+    height: 60vh;
+    overflow: auto;
+
+}
+
+.close-button{
+    height: 30px;
+    width: 70px;
+    background-color: rgb(81, 177, 64);
+    color: white;
+    border: unset;
+    border-radius: 5px;
+}
+
+.search-image{
+    width: 200px;
+    height:200px;
+    margin-top: 6px;
+    
+}
+
+footer{
+    
+    background-color: black;
+    color: white;
+    font-size:medium;
+}
+
+footer section{
+    display: flex;
+    justify-content: space-around;
+    height: 30vh;
+    align-items: center;
+}
+
+footer section img{
+    height:75%;
+    width: 25%;
+    border-radius: 10px;
+
+}
+
+footer p{
+    margin-top: 10px;
+}
+
+footer p:nth-child(1){
+    font-weight: bolder;
+    font-size: large;
+}
+hr{
+    background-color: grey;
+}
+
+#Categories{
+    background-color:rgb(81, 177, 64);
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    position: absolute;
+    justify-self: end;  
+    left: 35px;  
+    align-self:normal;
+}
+
+#Categories p {
+    padding: 3px;
+    text-align: left;
+
+}
+#Categories p:hover{
+ color: grey;
+}
+
+
+@media only screen and (max-width: 768px) {
+    *{
+        font-size:0.9em;
+        line-height: 10px;
+    }
+    #dish-random{
+        height: 250px;
+        width: 250px;
+    }
+    #discriptions-box{
+        width: 70vw;
+        height: 70vh;
+        margin-left:15% ;
+        margin-top: 20%;
+        z-index: 2;
+    }
+    .bigger{
+        font-size: medium;
+    }
+    footer{
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: space-evenly;
+    }
+    footer section{
+        flex-direction: column;
+        text-align: center;
+        height: 250px;
+    }
+    footer section img{
+        height:100px;
+        width: 100px;
+
+    }
+    
+}
