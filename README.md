@@ -15,7 +15,7 @@ Developed and designed by Jesudas Zion.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/organic.git
+   git clone https://github.com/Zion203/CA---3-
 Navigate to the project directory:
 
 bash
