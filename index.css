@@ -14,6 +14,7 @@ nav{
     position:sticky;
     top: 0;
     background-color: white;
+    z-index: 2;
 }
 
 .logos{
@@ -115,6 +116,10 @@ nav{
 
 }
 
+#random-content:hover{
+    scale: 1.01;
+}
+
 #dish-random{
     height:40vh;
     width: 35vw;
@@ -166,6 +171,7 @@ nav{
     color: white;
     height: 60vh;
     overflow: auto;
+    z-index: 2;
 
 }
 
@@ -273,7 +279,7 @@ hr{
     footer section img{
         height:100px;
         width: 100px;
-
+ 
     }
     
 }
